@@ -43,7 +43,8 @@ body {
   color: #212121;
 }
 
-.navigation-item-link:hover {
+.navigation-item-link:hover,
+.navigation-item-link:focus {
   color: #2196f3;
 }
 
@@ -58,7 +59,9 @@ body {
 }
 
 .navigation-mail:hover,
-.navigation-phone:hover {
+.navigation-mail:focus,
+.navigation-phone:hover,
+.navigation-phone:focus {
   color: #2196f3;
 }
 
@@ -77,7 +80,7 @@ body {
   color: #ffffff;
 }
 
-.button {
+.button-one {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
@@ -87,11 +90,11 @@ body {
   background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  cursor: pointer;
 }
 /* Nasze atuty */
 
 .advantages-item-paragraph {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
@@ -123,7 +126,7 @@ body {
 }
 
 /* footer */
-.footer {
+.foot {
   background-color: var(--background-color);
 }
 
@@ -155,4 +158,30 @@ body {
   letter-spacing: 0.03em;
   color: #ffffff;
   text-decoration: none;
+}
+
+/* Portfolio buttons */
+.buttons-list-item-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+.buttons-list-item-button:hover,
+.buttons-list-item-button:focus {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  background-color: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
